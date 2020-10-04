@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessTheWordGame.MainStatPage"
+             BackgroundColor="#6f69ff"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="List of players" 
+                   HorizontalOptions="Center"/>
+            <Button Text="Back"
+                    x:Name="backBtn"
+                    HorizontalOptions="Center"
+                    Clicked="BackBtn_Clicked"/>
+            <ScrollView>
+                <ListView
+                HasUnevenRows="true"
+                x:Name="PlayerListView"
+                ItemSelected="PlayerListView_ItemSelected"
+                BackgroundColor="#6f69ff">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.RowSpan="2"
+                                       Source="{Binding Avatar}"
+                                       Aspect="AspectFill"
+                                       HeightRequest="60"
+                                       WidthRequest="60" />
+                                    <Label Grid.Column="1"
+                                       Text="{Binding Username}"
+                                       FontAttributes="Bold" 
+                                       HorizontalOptions="Start"
+                                       />
+                                    <Label Grid.Row="1"
+                                       Grid.Column="1"
+                                       Text="{Binding UserID}"
+                                       VerticalOptions="End" 
+                                       HorizontalOptions="Start"
+                                       />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

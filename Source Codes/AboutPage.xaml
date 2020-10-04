@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessTheWordGame.AboutPage"
+             BackgroundColor="#6f69ff"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <Image HeightRequest="100"
+                   WidthRequest="100"
+                   x:Name="mypic"
+                   VerticalOptions="Center">
+                <Image.Source>
+                    <OnIdiom x:DataType="FileImageSource" Desktop="Assets/yaboi.jpg" Phone="yaboi.jpg"/>
+                </Image.Source>
+            </Image>
+            <Label HorizontalTextAlignment="Center" Text="This guy's name is Aaron Brent B. Abundo"/>
+            <Label HorizontalTextAlignment="Center" Text=" A wannabe programmer but has no motivation to study"/>
+            <Label HorizontalTextAlignment="Center" Text="Rushes all his projects on the last day and ends up creating mediocre code"/>
+            <Label HorizontalTextAlignment="Center" Text="Motto : eh, it's good enough"/>
+            <Label HorizontalTextAlignment="Center" Text="Instagram : @thisisaaronbrent"/>
+            <Label HorizontalTextAlignment="Center" Text="Twitter : @thisisaaronbrent"/>
+            <Button Style="{DynamicResource ButtonStyles}"
+                    Text="Back"
+                    x:Name="BackBtn"
+                    Clicked="BackBtn_Clicked"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

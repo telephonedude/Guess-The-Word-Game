@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessTheWordGame.StatsPage"
+              BackgroundColor="#6f69ff"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="0" VerticalOptions="Center">
+            <Label Text="Statistics Page" 
+                   HorizontalOptions="Center"/>
+            <Image HeightRequest="100"
+                   WidthRequest="100"
+                   x:Name="avatarbox"/>
+            <Label Text="Player ID:"
+                   HorizontalOptions="Center"/>
+            <Label Text=""
+                   x:Name="IDbox"
+                   Style="{DynamicResource LabelStyles}"
+                   HorizontalOptions="Center"/>
+            <Label Text="Username:"
+                   HorizontalOptions="Center"/>
+            <Label Text=""
+                   x:Name="Namebox"
+                   Style="{DynamicResource LabelStyles}"
+                   HorizontalOptions="Center"/>
+            <Label Text="Highest Gold Obtained:"
+                   HorizontalOptions="Center"/>
+            <Label Text=""
+                   x:Name="Goldbox"
+                   Style="{DynamicResource LabelStyles}"
+                   HorizontalOptions="Center"/>
+            <Label Text="Highest Round Reached:"
+                   HorizontalOptions="Center"/>
+            <Label Text=""
+                   x:Name="Roundbox"
+                   Style="{DynamicResource LabelStyles}"
+                   HorizontalOptions="Center"/>
+            <Label Text="Number of Reveals Used:"
+                   HorizontalOptions="Center"/>
+            <Label Text=""
+                   x:Name="Revealbox"
+                   Style="{DynamicResource LabelStyles}"
+                   HorizontalOptions="Center"/>
+            <Label Text="Total Rounds Played:"
+                   HorizontalOptions="Center"/>
+            <Label Text=""
+                   x:Name="TotalRoundsbox"
+                   Style="{DynamicResource LabelStyles}"
+                   HorizontalOptions="Center"/>
+            <Button Text="Back"
+                    x:Name="BackBtn"
+                    Clicked="BackBtn_Clicked"
+                    Style="{DynamicResource ButtonStyles}"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

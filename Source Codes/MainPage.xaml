@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GuessTheWordGame"
+             x:Class="GuessTheWordGame.MainPage"
+             BackgroundColor="#6f69ff"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout VerticalOptions="Center" Padding="50" BackgroundColor="#ff6f69">
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Brent's Guess the Word Game!" 
+               HorizontalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               WidthRequest="400"/>
+        <Label Text="Please Log In"
+               HorizontalOptions="Center" 
+               x:Name="Label1"/>
+        <Entry Placeholder="Username"
+               Style="{DynamicResource EntryStyles}"
+               x:Name="userbox"/>
+        <Entry Placeholder="Password"
+               Style="{DynamicResource EntryStyles}"
+               x:Name="passbox"/>
+        <Button Text="Log in"
+                HorizontalOptions="Center"
+                Style="{DynamicResource ButtonStyles}"
+                x:Name="loginBtn"
+                Clicked="Button_Clicked"/>
+        <Button Text="Sign Up"
+                HorizontalOptions="Center"
+                Style="{DynamicResource ButtonStyles}"
+                Clicked="Button_Clicked_1"/>
+        <Button Text="Exit game"
+                HorizontalOptions="Center"
+                Style="{DynamicResource ButtonStyles}"/>
+    </StackLayout>
+
+</ContentPage>

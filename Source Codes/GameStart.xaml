@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessTheWordGame.GameStart"
+             BackgroundColor="#6f69ff"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="10" BackgroundColor="#6f69ff">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition>
+                        <RowDefinition.Height>
+                            <OnIdiom x:DataType="GridUnitType" Desktop="150" Phone="100"/>
+                        </RowDefinition.Height>
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <ProgressBar x:Name="hpBar" Progress="1" Grid.ColumnSpan="7" ProgressColor="#ff5148"/>
+                <Label Text="HP" Grid.Column="7" VerticalOptions="Center"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="0" x:Name="Box0" BackgroundColor="#b8d4a2"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="1" x:Name="Box1" BackgroundColor="#b8d4a2"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="2" x:Name="Box2" BackgroundColor="#b8d4a2"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="3" x:Name="Box3" BackgroundColor="#b8d4a2"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="4" x:Name="Box4" BackgroundColor="#b8d4a2"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="5" x:Name="Box5" BackgroundColor="#b8d4a2"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="6" x:Name="Box6" BackgroundColor="#b8d4a2"/>
+                <Label Style="{StaticResource LabelStyle2}" Grid.Row="1" Grid.Column="7" x:Name="Box7" BackgroundColor="#b8d4a2"/>
+            </Grid>
+            <Grid Padding="20">
+                <Label Text="Synonyms:" Grid.Row="0" Grid.ColumnSpan="7" HorizontalTextAlignment="Start" />
+                <Label Text="Definitions:" Grid.Row="1" Grid.ColumnSpan="7" HorizontalTextAlignment="Start"/>
+                <Label Text="" Grid.Row="0" Grid.ColumnSpan="7" HorizontalTextAlignment="End" x:Name="goldBox" />
+                <Label Text="Definition:" Grid.Row="1" Grid.ColumnSpan="7" HorizontalTextAlignment="End" x:Name="usernameBox"/>
+                <Label Text="Put Synonyms here:" Grid.Row="0" Grid.ColumnSpan="7" HorizontalTextAlignment="Center" x:Name="synonymBox"/>
+                <Label Text="Put Definitions here:" Grid.Row="1" Grid.ColumnSpan="7" HorizontalTextAlignment="Center" x:Name="definitionBox"/>
+                <Button BackgroundColor="#ff6f69" Text="a" Grid.Row="2" Grid.Column="0" Margin="0,0,0,0" x:Name="ABtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="b" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" x:Name="BBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="c" Grid.Row="2" Grid.Column="2" Margin="0,0,0,0" x:Name="CBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="d" Grid.Row="2" Grid.Column="3" Margin="0,0,0,0" x:Name="DBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="e" Grid.Row="2" Grid.Column="4" Margin="0,0,0,0" x:Name="EBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="f" Grid.Row="2" Grid.Column="5" Margin="0,0,0,0" x:Name="FBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="g" Grid.Row="2" Grid.Column="6" Margin="0,0,0,0" x:Name="GBtn" Clicked="Button_Clicked"/>
+
+                <Button BackgroundColor="#ff6f69" Text="h" Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" x:Name="HBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="i" Grid.Row="3" Grid.Column="1" Margin="0,0,0,0" x:Name="IBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="j" Grid.Row="3" Grid.Column="2" Margin="0,0,0,0" x:Name="JBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="k" Grid.Row="3" Grid.Column="3" Margin="0,0,0,0" x:Name="KBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="l" Grid.Row="3" Grid.Column="4" Margin="0,0,0,0" x:Name="LBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="m" Grid.Row="3" Grid.Column="5" Margin="0,0,0,0" x:Name="MBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="n" Grid.Row="3" Grid.Column="6" Margin="0,0,0,0" x:Name="NBtn" Clicked="Button_Clicked"/>
+
+                <Button BackgroundColor="#ff6f69" Text="o" Grid.Row="4" Grid.Column="0" Margin="0,0,0,0" x:Name="OBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="p" Grid.Row="4" Grid.Column="1" Margin="0,0,0,0" x:Name="PBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="q" Grid.Row="4" Grid.Column="2" Margin="0,0,0,0" x:Name="QBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="r" Grid.Row="4" Grid.Column="3" Margin="0,0,0,0" x:Name="RBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="s" Grid.Row="4" Grid.Column="4" Margin="0,0,0,0" x:Name="SBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="t" Grid.Row="4" Grid.Column="5" Margin="0,0,0,0" x:Name="TBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="u" Grid.Row="4" Grid.Column="6" Margin="0,0,0,0" x:Name="UBtn" Clicked="Button_Clicked"/>
+
+                <Button BackgroundColor="#ff6f69" Text="v" Grid.Row="5" Grid.Column="1" Margin="0,0,0,0" x:Name="VBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="w" Grid.Row="5" Grid.Column="2" Margin="0,0,0,0" x:Name="WBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="x" Grid.Row="5" Grid.Column="3" Margin="0,0,0,0" x:Name="XBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="y" Grid.Row="5" Grid.Column="4" Margin="0,0,0,0" x:Name="YBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ff6f69" Text="z" Grid.Row="5" Grid.Column="5" Margin="0,0,0,0" x:Name="ZBtn" Clicked="Button_Clicked"/>
+                <Button BackgroundColor="#ffcc5c" Text="Reveal Word" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,0" x:Name="wordRevealBtn" Clicked="WordRevealBtn_Clicked"/>
+                <Button BackgroundColor="#ffcc5c" Text="Reveal Definition" Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="2" Margin="0,0,0,0" x:Name="defRevealBtn" Clicked="DefRevealBtn_Clicked"/>
+                <Label Text="Round:" Grid.Row="6" Grid.Column="3"/>
+                <Label Text="0" Grid.Row="7" Grid.Column="3" x:Name="roundBox"/>
+                <Button BackgroundColor="#96ceb4" Text="Continue" Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" Margin="0,0,0,0" x:Name="continueBtn" Clicked="ContinueBtn_Clicked" IsVisible="False" IsEnabled="False"/>
+                <Button BackgroundColor="#96ceb4" Text="Terminate" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,0" x:Name="exitBtn" Clicked="ExitBtn_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessTheWordGame.SignUpPage"
+             BackgroundColor="#6f69ff"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="0">
+            <Label Text="Welcome Player"/>
+            <Image HeightRequest="100"
+                   WidthRequest="100"
+                    x:Name="SelectedImage"/>
+            <Button Text="Upload Image"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    x:Name="upload_Btn"
+                    Clicked="Upload_Btn_Clicked"/>
+            <Label Text="ID Number:"/>
+            <Label x:Name="idbox"/>
+            <Label Text="Enter Username:"/>
+            <Entry x:Name="userbox"
+                   Placeholder="Username"/>
+            <Label Text="Enter Password:"/>
+            <Entry x:Name="passbox"
+                   Placeholder="Username"
+                   MaxLength="6"/>
+            <Entry x:Name="passbox2"
+                   Placeholder="Confirm Password here"
+                   MaxLength="6"/>
+            <Label Text="Say something about yourself"/>
+            <Editor x:Name="infobox" 
+                    HeightRequest="100"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"/>
+            <Button Text="Save new player" 
+                    x:Name="saveBtn" 
+                    Clicked="SaveBtn_Clicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"/>
+            <Button Text="Cancel" 
+                    x:Name="cancelBtn" 
+                    Clicked="CancelBtn_Clicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

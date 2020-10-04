@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessTheWordGame.HelpPage"
+              BackgroundColor="#6f69ff"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="0" VerticalOptions="Center">
+            <Label Text="Tips on how to win at a guess the word game"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Tip#1: Memorize the most common letters in the English language and use them when you believe they might be included in the hidden word."
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Tip#2: Try to come up with variations and synonyms of the provided hint."/>
+            <Label Text="Tip#3: Technically this could be considered cheating, but if you play with a friend in the same room you could double your chances of identifying the word by sharing the letters you are guessing."
+                   HorizontalTextAlignment="Center"/>
+            <Button Text="Back" x:Name="BackBtn" 
+                    Clicked="BackBtn_Clicked"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
